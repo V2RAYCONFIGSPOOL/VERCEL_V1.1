@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "name": "vercel-xhttp-relay",
+  "functions": {
+    "api/index.js": {
+      "memory": 128,
+      "maxDuration": 60
+    }
+  },
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api/index" }
+  ],
+  "trailingSlash": false
+}
